@@ -39,7 +39,8 @@ const App = () => {
             any device anywhere you like.
           </p>
         </div>
-        <form onSubmit={(event) => handleSubmit(event)}>
+        <form onSubmit={submitHandler}>
+
           <div className="select-container">
             <div className="music-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
@@ -63,8 +64,8 @@ const App = () => {
               </option>
               {options.map((option) => (
                 <option key={option.key} value={option.key}>
-                 
-                </option>
+  {option.plan} - {option.price}
+</option>
               ))}
             </select>
           </div>
