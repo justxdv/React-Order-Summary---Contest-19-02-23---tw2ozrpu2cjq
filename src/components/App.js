@@ -56,7 +56,7 @@ const App = () => {
             </div>
             <div className="plan">
               <h4 id="plan-title">{currentPlan ? currentPlan.plan : ""}</h4>
-              <p id="plan-price">{currentPlan ? currentPlan.price : ""}</p>
+              <p id="plan-price">${currentPlan ? currentPlan.price : ""}</p>
             </div>
             <select onChange={changeHandler} className="select" id="select">
               <option disabled selected>
