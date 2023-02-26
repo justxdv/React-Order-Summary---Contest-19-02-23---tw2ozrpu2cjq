@@ -12,12 +12,14 @@ const options = [
 const App = () => {
   const [currentPlan, setCurrentPlan] = useState();
 
-  const changeHandler = (e) => {
-
+   const changeHandler = (e) => {
+    const planIndex = e.target.value;
+    setCurrentPlan(options[planIndex]);
   };
 
   const submitHandler = (e) => {
-    
+    e.preventDefault();
+//     console.log("Submitting order for:", currentPlan.plan);
   };
 
   return (
