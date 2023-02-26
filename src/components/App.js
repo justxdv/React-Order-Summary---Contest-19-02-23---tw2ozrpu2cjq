@@ -55,8 +55,8 @@ const App = () => {
               </svg>
             </div>
             <div className="plan">
-              <h4 id="plan-title"></h4>
-              <p id="plan-price"></p>
+              <h4 id="plan-title">{currentPlan ? currentPlan.plan : ""}</h4>
+              <p id="plan-price">{currentPlan ? currentPlan.price : ""}</p>
             </div>
             <select onChange={changeHandler} className="select" id="select">
               <option disabled selected>
